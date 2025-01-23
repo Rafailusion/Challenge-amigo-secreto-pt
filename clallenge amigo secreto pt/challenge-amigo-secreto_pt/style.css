@@ -1,0 +1,105 @@
+/* Estilo base */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header-banner {
+    text-align: center;
+}
+
+.main-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #333;
+}
+
+.input-section {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.input-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-name {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.button-add {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-add:hover {
+    background-color: #45a049;
+}
+
+.name-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.result-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.button-draw {
+    padding: 10px 20px;
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-draw:hover {
+    background-color: #e67e22;
+}
+
+@media (max-width: 600px) {
+    .input-wrapper {
+        flex-direction: column;
+    }
+
+    .input-name {
+        margin-bottom: 10px;
+    }
+
+    .button-draw {
+        width: 100%;
+    }
+
+    body.mobile-view .button-add {
+        width: 100%;
+    }
+}
